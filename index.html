@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RWD履歷表登入頁面</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/login.css" />
+    <script type="text/javascript" src="./js/login.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif, "微軟正黑體";
+            margin: 1px;
+            padding: 5px;
+        }
+
+        .flex {
+            display: inline-flex;
+            height: 60px;
+            width: 100%;
+            background-color: #0d1217;
+        }
+
+        .drop-shadow {
+            -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
+        }
+
+        .button {
+            background-color: #4f709f;
+            /* royalblue */
+            border: none;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        fieldset {
+    border:0;
+    padding:10px;
+    margin-bottom:
+    10px;background:#EEE;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px; 
+    background:-webkit-liner-gradient(top,#EEEEEE,#FFFFFF);
+    background:linear-gradient(top,#EFEFEF,#FFFFFF);
+    box-shadow:3px 3px 10px #666;
+    -moz-box-shadow:3px 3px 10px #666;
+    -webkit-box-shadow:3px 3px 10px #666; 
+    position:relative;
+    }
+ 
+legend {
+    padding:5px 10px;
+    background-color:#4F709F;
+    color:#FFF;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    box-shadow:2px 2px 4px #666;
+    -moz-box-shadow:2px 2px 4px #666;
+    -webkit-box-shadow:2px 2px 4px #666;
+    position:absolute;
+    left:10px;top:-11px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">註冊登入畫面</h1>
+        <h4>BluebeeNancy Design<a href='http://220.128.133.15/s1090209/'>泰山職訓中心</a></h4>
+    </div>
+    <div id="login_frame">
+        <p id="image_logo"><img src="./imgs/lucky7.png" width="50" height="50"></p>
+        <form method="post" action="./js/login.js">
+            <fieldset>
+                <legend>使用者登入</legend>
+                <label class="label_input">使用者名稱</label><input type="text" id="username" class="text_field" maxlength="10" size="10"/></p>
+                <label class="label_input">密碼</label><input type="text" id="password" class="text_field" maxlength="10" size="10"/></p>
+                <div id="login_control">
+                    <input type="button" id="btn_login" value="登入" onclick="login();" />
+                    <a id="forget_pwd" href="forget_pwd.html">忘記密碼？</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
