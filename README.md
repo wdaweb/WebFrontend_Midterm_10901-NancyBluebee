@@ -27,7 +27,7 @@
 
 ## 繳交方式
 完整代碼上傳 Github ClassRoom 至指定 repository，並於說明欄位提供 個人 GitPage 之預覽連結（前項第 6 點動作）
-### LOGIN功能：https://nancybluebee.github.io/index.html
+### LOGIN功能：https://nancybluebee.github.io/index.html  帳號及密碼：bluebee
 ### GITPAGE預覽連結：https://nancybluebee.github.io/welcome.html
 
 
